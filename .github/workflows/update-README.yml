@@ -9,7 +9,7 @@ jobs:
         uses: actions/checkout@v5
       - run: echo "The ${{ github.repository }} repository has been cloned."
       - name: Add text to file
-        run: echo Zachary Brosius; Gus Alston > README.md
+        run: echo "Zachary Brosius; Gus Alston" >> README.md
       - name: Add file
         run: git add README.md
       - name: Commit the file
